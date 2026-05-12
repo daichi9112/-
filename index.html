@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>渡辺美玲 公式サイト | 千葉県習志野市</title>
+  <meta name="description" content="千葉県習志野市で活動する渡辺美玲の公式サイトです。ごあいさつ、政策、プロフィール、活動報告、お知らせ、連絡先を掲載しています。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    渡辺美玲 公式サイト
+    編集の基本：
+    - 文章を変えたい場合は、この index.html 内の日本語部分を編集してください。
+    - 色や余白を変えたい場合は style.css を編集してください。
+    - メニューやフォーム風表示の動きを変えたい場合は script.js を編集してください。
+  -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- ロゴ風の名前表示です。正式なロゴ画像に差し替える場合もここを編集します。 -->
+      <a class="site-logo" href="#top" aria-label="渡辺美玲 公式サイト トップへ">
+        <span class="logo-name">渡辺美玲</span>
+        <span class="logo-sub">公式サイト</span>
+      </a>
+
+      <!-- スマホ用メニューボタンです。見た目や動きは CSS / JavaScript で調整しています。 -->
+      <button class="menu-button" type="button" aria-controls="global-nav" aria-expanded="false">
+        <span class="menu-button-line"></span>
+        <span class="menu-button-line"></span>
+        <span class="menu-button-line"></span>
+        <span class="sr-only">メニューを開閉</span>
+      </button>
+
+      <nav id="global-nav" class="global-nav" aria-label="主要メニュー">
+        <a href="#message">ごあいさつ</a>
+        <a href="#policies">政策</a>
+        <a href="#profile">プロフィール</a>
+        <a href="#achievements">これまでの活動</a>
+        <a href="#reports">活動報告</a>
+        <a href="#news">お知らせ</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- メインビジュアル。候補者写真は assets/tanabe-mirei-placeholder.png を差し替えてください。 -->
+    <section class="hero section-band">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="area-label">千葉県習志野市で活動</p>
+          <h1>渡辺美玲</h1>
+          <p class="catch-copy">習志野の未来を、やさしさと行動で前へ。</p>
+          <p class="sub-copy">子どもたちの未来を守り、誰もが自分らしく暮らせる習志野へ。</p>
+          <div class="hero-highlights" aria-label="これまでの主な活動">
+            <span>環境問題を歌とダンスで学ぶ活動</span>
+            <span>小学校でのごみの授業</span>
+            <span>市民参加型ミュージカル</span>
+          </div>
+          <div class="hero-actions" aria-label="主要リンク">
+            <a class="button button-primary" href="#policies">政策を見る</a>
+            <a class="button button-secondary" href="#contact">お問い合わせ</a>
+          </div>
+        </div>
+
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="assets/tanabe-mirei-placeholder.png" alt="渡辺美玲さんの仮画像">
+          <p class="photo-note">仮画像：正式写真に差し替え予定</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="message" class="section">
+      <div class="container narrow">
+        <p class="section-label">Message</p>
+        <h2>ごあいさつ</h2>
+        <!-- ご本人の言葉に差し替えると、より自然なページになります。 -->
+        <p>
+          習志野市で暮らす一人ひとりの声に耳を傾け、日々の安心と、子どもたちの未来を大切にするまちづくりを進めたいと考えています。
+          地域で出会う皆さまの思いや困りごとは、暮らしに近い政治が向き合うべき大切な出発点です。
+        </p>
+        <p>
+          気候変動や子育て、不登校、働き方や家族のあり方など、私たちの暮らしを取り巻く課題は複雑になっています。
+          だからこそ、誰かを取り残すのではなく、地域全体で支え合い、選択肢を増やしていく姿勢が必要です。
+        </p>
+        <p>
+          これまで、子どもたちと環境問題を楽しく学ぶ活動に関わる中で、子どもたちの柔らかな発想や、
+          地域の大人が少しずつつながることの大切さを実感してきました。その経験を、習志野のまちづくりに生かしていきます。
+        </p>
+        <p>
+          子どもたちが安心して育ち、誰もが自分らしく暮らせる習志野へ。対話を重ねながら、やさしく、現実的な一歩を積み重ねてまいります。
+        </p>
+      </div>
+    </section>
+
+    <section id="policies" class="section section-soft">
+      <div class="container">
+        <p class="section-label">Policies</p>
+        <h2>政策の柱</h2>
+        <div class="policy-grid">
+          <article class="policy-card">
+            <div class="policy-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M19 3C12 4 7 9 6 16c4 0 10-2 13-13Z"></path>
+                <path d="M6 16c-1 1-2 3-2 5"></path>
+                <path d="M8 14c3 0 6-2 9-7"></path>
+              </svg>
+              <span>緑</span>
+            </div>
+            <h3>未来へつなぐ、やさしい環境アクション</h3>
+            <p>
+              気候変動や地球温暖化を、遠い問題ではなく子どもたちの暮らしに関わる課題として受け止めます。
+              行政、企業、地域、家庭が無理なく参加できる省エネ、再エネ、緑化、ごみ削減を進め、学びと実践がつながるまちを目指します。
+            </p>
+          </article>
+
+          <article class="policy-card">
+            <div class="policy-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M4 6.5 12 3l8 3.5-8 3.5-8-3.5Z"></path>
+                <path d="M7 9v5c2 2 8 2 10 0V9"></path>
+                <path d="M20 7v6"></path>
+              </svg>
+              <span>学</span>
+            </div>
+            <h3>学び方を選べる、孤立させない子育て支援</h3>
+            <p>
+              学校に行けないことを、本人や家庭だけで抱え込む問題にしません。
+              相談先、安心できる居場所、オンラインや地域での学びなど選択肢を増やし、子どもと保護者が早い段階で支えにつながれる仕組みを育てます。
+            </p>
+          </article>
+
+          <article class="policy-card">
+            <div class="policy-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                <path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                <path d="M3.5 20c.7-3 2.6-5 4.5-5s3.8 2 4.5 5"></path>
+                <path d="M11.5 20c.7-3 2.6-5 4.5-5s3.8 2 4.5 5"></path>
+              </svg>
+              <span>人</span>
+            </div>
+            <h3>違いを力に変える、尊重と安心のまちづくり</h3>
+            <p>
+              性別、年齢、家庭環境、学校への通い方、働き方、性的指向や性自認などによって、暮らしやすさが左右されないまちへ。
+              一人ひとりの声を尊重し、相談しやすく、参加しやすく、安心して自分らしく過ごせる地域づくりを進めます。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="section">
+      <div class="container profile-layout">
+        <div>
+          <p class="section-label">Profile</p>
+          <h2>プロフィール</h2>
+          <!-- 詳細な経歴が決まったら、この仮文章を差し替えてください。 -->
+          <p>
+            1988年生まれ。千葉県習志野市で地域の皆さまと対話を重ねながら、子育て支援、環境問題、
+            多様性を尊重する社会づくりに関心を持ち、活動しています。
+          </p>
+          <p>
+            これまで、市民活動団体 earth FUNTRY! の活動を通じて、子どもたちと歌やダンスで環境問題やSDGsを学ぶ機会づくりに関わってきました。
+            難しく感じられる社会課題を、身近な暮らしや表現活動の中から考えられるようにすることを大切にしています。
+          </p>
+          <p>
+            日々の暮らしに近い課題を、わかりやすく、丁寧に、そして現実的に前へ進めることを大切にしています。
+            詳細な経歴、家族構成、職歴、地域活動歴などは後日掲載予定です。
+          </p>
+        </div>
+        <dl class="profile-list">
+          <div>
+            <dt>名前</dt>
+            <dd>渡辺美玲</dd>
+          </div>
+          <div>
+            <dt>生年</dt>
+            <dd>1988年</dd>
+          </div>
+          <div>
+            <dt>活動地域</dt>
+            <dd>千葉県習志野市</dd>
+          </div>
+          <div>
+            <dt>関心分野</dt>
+            <dd>子育て支援、環境、多様性、地域活動</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="achievements" class="section section-soft">
+      <div class="container achievement-layout">
+        <div>
+          <p class="section-label">Activities</p>
+          <h2>これまでの活動</h2>
+          <!-- 実績や団体名、開催場所などが確定したら、この文章を正式情報に差し替えてください。 -->
+          <p>
+            渡辺美玲は、習志野市を拠点とする市民活動団体 earth FUNTRY! の活動に関わり、
+            子どもたちが楽しみながら環境問題やSDGsに触れられる機会づくりに取り組んできました。
+            歌とダンス「レッツトライ！サステナブル！」や、環境問題学習ミュージカル「小さな一歩」など、
+            表現を通じて学びを広げる活動です。
+          </p>
+          <p>
+            小学校での「ごみの授業」、地域清掃、環境ワークショップ、イベント出展などを通じて、
+            子どもたちの発想や前向きな行動を地域の力につなげることを大切にしてきました。
+            子どもたちの未来を守る環境政策への思いは、こうした実践の経験にもつながっています。
+          </p>
+          <div class="reference-links" aria-label="参考リンク">
+            <a href="https://www.palsystem-chiba.coop/news/detail/post-30646/" target="_blank" rel="noopener">パルシステム千葉 掲載記事</a>
+            <a href="https://chiicomi.com/press/2052227/" target="_blank" rel="noopener">チイコミ！ 掲載記事</a>
+            <a href="https://www.instagram.com/earth_funtry/" target="_blank" rel="noopener">earth FUNTRY! Instagram</a>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <p class="achievement-kicker">主な取り組み</p>
+          <ul>
+            <li>歌とダンスで楽しく考えるSDGsの学び</li>
+            <li>環境問題学習ミュージカル「小さな一歩」</li>
+            <li>小学校などでの体験型ワークショップ「ごみの授業」</li>
+            <li>地域清掃、環境ワークショップ、イベントでの啓発活動</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container activity-points">
+        <article class="activity-point">
+          <p class="point-label">地域で</p>
+          <h3>習志野を拠点に、暮らしの中から環境を考える</h3>
+          <p>
+            身近な川、公園、道端のごみなど、日々の暮らしの中で見える課題から出発し、
+            子どもも大人も一緒に考えられる活動を重ねてきました。
+          </p>
+        </article>
+        <article class="activity-point">
+          <p class="point-label">子どもと</p>
+          <h3>楽しい表現で、学びの入口をひらく</h3>
+          <p>
+            歌、ダンス、クイズ、ミュージカルなどを通じて、環境問題を暗い話題だけで終わらせず、
+            前向きな行動につながる学びを大切にしてきました。
+          </p>
+        </article>
+        <article class="activity-point">
+          <p class="point-label">仲間と</p>
+          <h3>市民参加で、まちの力を育てる</h3>
+          <p>
+            学校や地域施設、イベントでの活動を通じて、親子、地域団体、ボランティアなど、
+            さまざまな人が関わる場づくりに取り組んできました。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="reports" class="section">
+      <div class="container">
+        <p class="section-label">Reports</p>
+        <h2>活動報告</h2>
+        <div class="article-grid">
+          <!-- 活動報告は article をコピーすると増やせます。 -->
+          <article class="article-card">
+            <time datetime="2026-01-10">2026年1月10日</time>
+            <h3>市民参加型ミュージカル「小さな一歩」</h3>
+            <p>プラッツ習志野で、環境問題をテーマにした市民参加型ミュージカルの活動に関わりました。</p>
+          </article>
+          <article class="article-card">
+            <time datetime="2025-02-10">2025年2月10日</time>
+            <h3>earth FUNTRY! の活動が紹介されました</h3>
+            <p>パルシステム千葉のコミュニティ活動助成基金交付団体として、歌とダンスでSDGsを学ぶ活動が紹介されました。</p>
+          </article>
+          <article class="article-card">
+            <time datetime="2025-01-04">2025年1月4日</time>
+            <h3>地域での環境活動が記事になりました</h3>
+            <p>チイコミ！で、歌とダンス、ミュージカル、ごみの授業、地域清掃などの活動が紹介されました。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="section">
+      <div class="container narrow">
+        <p class="section-label">News</p>
+        <h2>お知らせ</h2>
+        <ul class="news-list">
+          <!-- 日付や内容は仮です。正式な予定に合わせて差し替えてください。 -->
+          <li>
+            <time datetime="2026-05-01">2026年5月1日</time>
+            <span>公式サイトを公開しました。</span>
+          </li>
+          <li>
+            <time datetime="2026-05-10">2026年5月10日</time>
+            <span>地域での対話活動予定を更新しました。</span>
+          </li>
+          <li>
+            <time datetime="2026-05-18">2026年5月18日</time>
+            <span>政策ページの内容を一部追記しました。</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+      <div class="container contact-layout">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>お問い合わせ</h2>
+          <p>
+            ご意見、ご質問、地域で気になっていることなどがありましたら、下記の連絡先よりお寄せください。
+            連絡先は正式な情報に差し替えてご利用ください。
+          </p>
+
+          <div class="contact-info">
+            <!-- 連絡先は仮です。必ず正式なメールアドレス・電話番号に差し替えてください。 -->
+            <p><strong>メール：</strong><a href="mailto:info@example.com">info@example.com</a></p>
+            <p><strong>電話：</strong><a href="tel:0000000000">000-0000-0000</a></p>
+            <p><strong>SNS：</strong><a href="#" aria-label="Xへのリンク">X</a> / <a href="#" aria-label="Instagramへのリンク">Instagram</a> / <a href="#" aria-label="Facebookへのリンク">Facebook</a></p>
+          </div>
+        </div>
+
+        <!-- 送信機能はありません。見た目だけのフォームです。 -->
+        <form class="contact-form" aria-label="お問い合わせフォーム風表示">
+          <label>
+            お名前
+            <input type="text" name="name" placeholder="山田 花子">
+          </label>
+          <label>
+            メールアドレス
+            <input type="email" name="email" placeholder="example@mail.com">
+          </label>
+          <label>
+            お問い合わせ内容
+            <textarea name="message" rows="5" placeholder="お問い合わせ内容をご入力ください"></textarea>
+          </label>
+          <button class="button button-primary" type="button">送信機能は準備中です</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-title">渡辺美玲 公式サイト</p>
+        <p>千葉県習志野市で活動</p>
+      </div>
+      <div>
+        <p>連絡先：info@example.com / 000-0000-0000</p>
+        <p><small>&copy; 2026 渡辺美玲 公式サイト. All Rights Reserved.</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
