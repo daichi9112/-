@@ -144,6 +144,10 @@ a {
   padding: 88px 0;
 }
 
+.hero.section-band {
+  padding-top: 44px;
+}
+
 .section-soft {
   background: var(--soft-bg);
 }
@@ -217,6 +221,10 @@ h3 {
   font-size: clamp(1.55rem, 3.5vw, 2.45rem);
   font-weight: 800;
   line-height: 1.45;
+}
+
+.catch-copy span {
+  display: inline-block;
 }
 
 .sub-copy {
@@ -638,6 +646,10 @@ h3 {
   .section,
   .section-band {
     padding: 64px 0;
+  }
+
+  .hero.section-band {
+    padding-top: 30px;
   }
 
   .hero-inner {
