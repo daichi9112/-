@@ -315,21 +315,26 @@
           </div>
         </div>
 
-        <!-- 送信機能はありません。見た目だけのフォームです。 -->
-        <form class="contact-form" aria-label="お問い合わせフォーム風表示">
+        <!-- Formspreeに送信するお問い合わせフォームです。actionのURLを変えると送信先を変更できます。 -->
+        <form class="contact-form" action="https://formspree.io/f/xdabvprd" method="POST" aria-label="お問い合わせフォーム">
           <label>
             お名前
-            <input type="text" name="name" placeholder="山田 花子">
+            <input type="text" name="name" placeholder="山田 花子" required>
           </label>
           <label>
             メールアドレス
-            <input type="email" name="email" placeholder="example@mail.com">
+            <input type="email" name="email" placeholder="example@mail.com" required>
+          </label>
+          <label>
+            件名
+            <input type="text" name="subject" placeholder="お問い合わせの件名" required>
           </label>
           <label>
             お問い合わせ内容
-            <textarea name="message" rows="5" placeholder="お問い合わせ内容をご入力ください"></textarea>
+            <textarea name="message" rows="5" placeholder="お問い合わせ内容をご入力ください" required></textarea>
           </label>
-          <button class="button button-primary" type="button">送信機能は準備中です</button>
+          <button class="button button-primary" type="submit">送信する</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>

@@ -283,6 +283,11 @@ h3 {
   background: var(--navy-light);
 }
 
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.68;
+}
+
 .button-secondary {
   color: var(--navy);
   background: var(--white);
@@ -547,6 +552,21 @@ h3 {
 
 .contact-form textarea {
   resize: vertical;
+}
+
+.form-status {
+  min-height: 1.8em;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.form-status.is-success {
+  color: #256f42;
+}
+
+.form-status.is-error {
+  color: #a33a3a;
 }
 
 .site-footer {
